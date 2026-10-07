@@ -1,5 +1,7 @@
 # XAUUSD Quantitative Breakout Analysis
 
+<img width="1672" height="941" alt="Algorithmic Trading and Gold Analytics" src="https://github.com/user-attachments/assets/4fbf565f-c90b-45c9-8eb3-c4a147222eb4" />
+
 A 10-year quantitative research engine built in MQL5 to backtest moving average breakout strategies on Gold (XAUUSD).
 
 This project tests a mechanical hypothesis: *Does a pure, single-candle moving average breakout carry a tradable edge on Gold?* By computing thousands of simulated trades across a grid of timeframes, moving averages, and exit models from 2015 to 2025, this repository explores market momentum, the realities of spread drag, and the structural differences between intraday noise and macro trends.
