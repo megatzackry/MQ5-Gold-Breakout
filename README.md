@@ -13,11 +13,7 @@ This project tests a mechanical hypothesis: *Does a pure, single-candle moving a
 
 ## Repository Structure
 
-* `GoldBreakoutResearch_v3.mq5`: The core MQL5 research script. It executes the backtest grid (Timeframes x MAs x Periods x Exits x Stops) directly on historical chart data without look-ahead bias.
-* `*_summary.csv`: Next-candle statistics, baseline probabilities, and standard error checks.
-* `*_rmult.csv`: Comprehensive R-multiple expectancy statistics for every tested combination.
-* `*_horizon.csv`: Forward-return decay curves measuring how long the edge persists in bars held.
-* `*_timeframes.csv`: Data quality checks detailing history coverage and median historical spread.
+* `GoldBreakoutResearch.mq5`: The core MQL5 research script. It executes the backtest grid (Timeframes x MAs x Periods x Exits x Stops) directly on historical chart data without look-ahead bias.
 
 ## Methodology
 
@@ -35,7 +31,7 @@ This script is designed to run directly on a MetaTrader 5 (MT5) chart, circumven
 
 1. **Prepare Terminal:** Navigate to `Tools > Options > Charts` and set `Max bars in chart` to **Unlimited**.
 2. **Download History:** Open each timeframe (W1 down to M15) for XAUUSD and scroll back to ensure historical server data is locally synchronized.
-3. **Execute:** Attach `GoldBreakoutResearch_v3.mq5` to any XAUUSD chart as a script.
+3. **Execute:** Attach `GoldBreakoutResearch.mq5` to any XAUUSD chart as a script.
 4. **Retrieve Data:** Expect a few minutes of runtime (M15 and M30 processing dominates CPU time). The output data pipeline will write the CSV reports to your `MQL5\Files\` directory.
 
 ## Future Exploration
